@@ -2,7 +2,7 @@
 
 namespace Cthulhu\IosReceiptParser\ASN1;
 
-use phpseclib\File\ASN1;
+use phpseclib3\File\ASN1;
 
 class Pkcs7UnverifiedParser implements Pkcs7Reader
 {
@@ -10,7 +10,7 @@ class Pkcs7UnverifiedParser implements Pkcs7Reader
 
     public function __construct()
     {
-        $this->decoder = new SimpleDecoder(new ASN1());
+        $this->decoder = new SimpleDecoder();
     }
 
     public function readUnverified(string $ber): string

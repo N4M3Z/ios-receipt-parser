@@ -5,7 +5,6 @@ namespace Cthulhu\IosReceiptParser;
 use Cthulhu\IosReceiptParser\ASN1\Pkcs7Reader;
 use Cthulhu\IosReceiptParser\ASN1\Pkcs7UnverifiedParser;
 use Cthulhu\IosReceiptParser\ASN1\SimpleDecoder;
-use phpseclib\File\ASN1;
 
 final class Parser
 {
@@ -18,7 +17,7 @@ final class Parser
     public function __construct(Pkcs7Reader $pkcs7Reader = null)
     {
         $this->pkcs7Reader = $pkcs7Reader ?? new Pkcs7UnverifiedParser();
-        $this->decoder = new SimpleDecoder(new ASN1());
+        $this->decoder = new SimpleDecoder();
     }
 
     public function parseUnverified(string $receipt): Receipt

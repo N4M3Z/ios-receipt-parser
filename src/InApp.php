@@ -5,7 +5,7 @@ namespace Cthulhu\IosReceiptParser;
 use Cthulhu\IosReceiptParser\ASN1\SimpleDecoder;
 use Cthulhu\IosReceiptParser\Attribute\AttributeSet;
 use Cthulhu\IosReceiptParser\Attribute\AttributeType;
-use phpseclib\File\ASN1;
+use phpseclib3\File\ASN1;
 
 /**
  * @psalm-import-type AttributeSequence from AttributeSet
