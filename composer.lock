@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb1e0935ac6608bd0d358f734aff3292",
+    "content-hash": "7829c6cee2eb0fda2247b51675d102f2",
     "packages": [
         {
             "name": "paragonie/constant_time_encoding",
@@ -125,16 +125,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.9",
+            "version": "dev-fix/base64-octet-string",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "a127a5133804ff2f47ae629dd529b129da616ad7"
+                "url": "https://github.com/N4M3Z/phpseclib.git",
+                "reference": "d807257daa1b93df10c252b25b1c3b77871fac00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/a127a5133804ff2f47ae629dd529b129da616ad7",
-                "reference": "a127a5133804ff2f47ae629dd529b129da616ad7",
+                "url": "https://api.github.com/repos/N4M3Z/phpseclib/zipball/d807257daa1b93df10c252b25b1c3b77871fac00",
+                "reference": "d807257daa1b93df10c252b25b1c3b77871fac00",
                 "shasum": ""
             },
             "require": {
@@ -162,7 +162,6 @@
                     "phpseclib3\\": "phpseclib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -215,24 +214,23 @@
                 "x509"
             ],
             "support": {
-                "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.9"
+                "source": "https://github.com/N4M3Z/phpseclib/tree/fix/base64-octet-string"
             },
             "funding": [
                 {
-                    "url": "https://github.com/terrafrost",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/terrafrost"
                 },
                 {
-                    "url": "https://www.patreon.com/phpseclib",
-                    "type": "patreon"
+                    "type": "patreon",
+                    "url": "https://www.patreon.com/phpseclib"
                 },
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
-                    "type": "tidelift"
+                    "type": "tidelift",
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib"
                 }
             ],
-            "time": "2021-06-14T06:54:45+00:00"
+            "time": "2021-07-02T16:19:14+00:00"
         }
     ],
     "packages-dev": [
@@ -2520,7 +2518,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "phpseclib/phpseclib": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

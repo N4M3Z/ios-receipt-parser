@@ -14,9 +14,15 @@
       "Cthulhu\\IosReceiptParser\\": "src/"
     }
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/N4M3Z/phpseclib"
+    }
+  ],
   "require": {
     "php": ">= 7.3",
-    "phpseclib/phpseclib": "^3.0"
+    "phpseclib/phpseclib": "dev-fix/base64-octet-string"
   },
   "suggest": {
     "symfony/process": "To run OpenSSL in process to actually verify PKCS#7 container signatures"
