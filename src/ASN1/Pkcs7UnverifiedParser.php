@@ -55,7 +55,7 @@ class Pkcs7UnverifiedParser implements Pkcs7Reader
             ],
         ]);
 
-        return base64_decode($data['data']['data']['data']);
+        return $data['data']['data']['data'];
     }
 
     public function readUsingOnlyTrustedCerts(string $ber, string ...$certificates): string
