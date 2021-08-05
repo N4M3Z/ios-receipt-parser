@@ -1,5 +1,5 @@
 {
-  "name": "cthulhu/ios-receipt-parser",
+  "name": "protonlabs/ios-receipt-parser",
   "description": "Utility to parse Apple-issued PKCS#7 container with receipts",
   "license": "MIT",
   "type": "library",
