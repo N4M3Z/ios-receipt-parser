@@ -1,5 +1,7 @@
 # Apple StoreKit receipt parser for PHP
 
+This library is forked from [cthulhu/ios-receipt-parser](https://github.com/CthulhuDen/ios-receipt-parser).
+
 This library can be used to parse Apple billing receipts in accordance with
 https://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateLocally.html
 and https://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html
@@ -15,7 +17,7 @@ In all other cases, you should strongly prefer to validate all receipts against 
 ## Installation
 
 ```bash
-composer install cthulhu/ios-receipt-parser
+composer install protonlabs/ios-receipt-parser
 ```
 
 ## Usage
