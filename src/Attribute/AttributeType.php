@@ -8,50 +8,63 @@ namespace Proton\IosReceiptParser\Attribute;
 final class AttributeType
 {
     // Receipt
-
-    const RECEIPT_BUNDLE_ID = 2;
-    const RECEIPT_APP_VERSION = 3;
-    const RECEIPT_OPAQUE = 4;
-    const RECEIPT_SHA1 = 5;
-    const RECEIPT_CREATION_DATE = 12;
-    const RECEIPT_IN_APP = 17;
-    const RECEIPT_ORIGINAL_APP_VERSION = 19;
-    const RECEIPT_EXPIRATION_DATE = 21;
+    public const RECEIPT_APP_ITEM_ID = 0;
+    public const RECEIPT_BUNDLE_ID = 2;
+    public const RECEIPT_APP_VERSION = 3;
+    public const RECEIPT_OPAQUE = 4;
+    public const RECEIPT_SHA1 = 5;
+    public const RECEIPT_CREATION_DATE = 12;
+    public const RECEIPT_CREATION_DATE_MS = 12 * 1000;
+    public const RECEIPT_IN_APP = 17;
+    public const RECEIPT_ORIGINAL_APP_VERSION = 19;
+    public const RECEIPT_EXPIRATION_DATE = 21;
+    public const RECEIPT_EXPIRATION_DATE_MS = 21 * 1000;
 
     // InApp
-
-    const IN_APP_QUANTITY = 1701;
-    const IN_APP_PRODUCT_IDENTIFIER = 1702;
-    const IN_APP_TRANSACTION_IDENTIFIER = 1703;
-    const IN_APP_PURCHASE_DATE = 1704;
-    const IN_APP_ORIGINAL_TRANSACTION_IDENTIFIER = 1705;
-    const IN_APP_ORIGINAL_PURCHASE_DATE = 1706;
-    const IN_APP_SUBSCRIPTION_EXPIRATION_DATE = 1708;
-    const IN_APP_WEB_ORDER_LINE_ITEM_ID = 1711;
-    const IN_APP_CANCELLATION_DATE = 1712;
-    const IN_APP_SUBSCRIPTION_INTRODUCTORY_PRICE_PERIOD = 1719;
+    public const IN_APP_QUANTITY = 1701;
+    public const IN_APP_PRODUCT_IDENTIFIER = 1702;
+    public const IN_APP_TRANSACTION_IDENTIFIER = 1703;
+    public const IN_APP_PURCHASE_DATE = 1704;
+    public const IN_APP_PURCHASE_DATE_MS = 1704 * 1000;
+    public const IN_APP_ORIGINAL_TRANSACTION_IDENTIFIER = 1705;
+    public const IN_APP_ORIGINAL_PURCHASE_DATE = 1706;
+    public const IN_APP_ORIGINAL_PURCHASE_DATE_MS = 1706 * 1000;
+    public const IN_APP_SUBSCRIPTION_EXPIRATION_DATE = 1708;
+    public const IN_APP_SUBSCRIPTION_EXPIRATION_DATE_MS = 1708 * 1000;
+    public const IN_APP_WEB_ORDER_LINE_ITEM_ID = 1711;
+    public const IN_APP_CANCELLATION_DATE = 1712;
+    public const IN_APP_CANCELLATION_DATE_MS = 1712 * 1000;
+    public const IN_APP_SUBSCRIPTION_INTRODUCTORY_PRICE_PERIOD = 1719;
 
     private const JSON_FIELD_NAMES = [
+        self::RECEIPT_APP_ITEM_ID => 'app_item_id',
         self::RECEIPT_BUNDLE_ID => 'bundle_id',
         self::RECEIPT_APP_VERSION => 'application_version',
         self::RECEIPT_CREATION_DATE => 'receipt_creation_date',
+        self::RECEIPT_CREATION_DATE_MS => 'receipt_creation_date_ms',
         self::RECEIPT_IN_APP => 'in_app',
         self::RECEIPT_ORIGINAL_APP_VERSION => 'original_application_version',
         self::RECEIPT_EXPIRATION_DATE => 'receipt_expiration_date',
+        self::RECEIPT_EXPIRATION_DATE_MS => 'receipt_expiration_date_ms',
 
         self::IN_APP_QUANTITY => 'quantity',
         self::IN_APP_PRODUCT_IDENTIFIER => 'product_id',
         self::IN_APP_TRANSACTION_IDENTIFIER => 'transaction_id',
         self::IN_APP_PURCHASE_DATE => 'purchase_date',
+        self::IN_APP_PURCHASE_DATE_MS => 'purchase_date_ms',
         self::IN_APP_ORIGINAL_TRANSACTION_IDENTIFIER => 'original_transaction_id',
         self::IN_APP_ORIGINAL_PURCHASE_DATE => 'original_purchase_date',
+        self::IN_APP_ORIGINAL_PURCHASE_DATE_MS => 'original_purchase_date_ms',
         self::IN_APP_SUBSCRIPTION_EXPIRATION_DATE => 'expires_date',
+        self::IN_APP_SUBSCRIPTION_EXPIRATION_DATE_MS => 'expires_date_ms',
         self::IN_APP_WEB_ORDER_LINE_ITEM_ID => 'web_order_line_item_id',
         self::IN_APP_CANCELLATION_DATE => 'cancellation_date',
+        self::IN_APP_CANCELLATION_DATE_MS => 'cancellation_date_ms',
         self::IN_APP_SUBSCRIPTION_INTRODUCTORY_PRICE_PERIOD => 'is_in_intro_offer_period',
     ];
 
     private const HUMAN_FIELD_DESCRIPTIONS = [
+        self::RECEIPT_APP_ITEM_ID => 'A string that the App Store uses to uniquely identify the application that created the transaction.',
         self::RECEIPT_BUNDLE_ID => 'The app\'s bundle identifier',
         self::RECEIPT_APP_VERSION => 'The app\'s version number',
         self::RECEIPT_OPAQUE => 'An opaque value used, with other data, to compute the SHA-1 hash during validation',

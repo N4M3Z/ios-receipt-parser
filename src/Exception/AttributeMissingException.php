@@ -10,6 +10,9 @@ final class AttributeMissingException extends \Exception
     /** @var int */
     private $type;
 
+    /**
+     * @throws \Exception
+     */
     public function __construct(int $type, string $context = null, $code = 0, Throwable $previous = null)
     {
         $typeField = AttributeType::getJsonFieldName($type) ?? $type;
