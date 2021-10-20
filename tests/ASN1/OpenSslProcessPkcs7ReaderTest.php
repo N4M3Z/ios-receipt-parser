@@ -2,7 +2,7 @@
 
 namespace ASN1;
 
-use Cthulhu\IosReceiptParser\ASN1\OpenSslProcessPkcs7Reader;
+use Proton\IosReceiptParser\ASN1\OpenSslProcessPkcs7Reader;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 

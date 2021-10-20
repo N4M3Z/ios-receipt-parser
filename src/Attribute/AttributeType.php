@@ -1,6 +1,6 @@
 <?php
 
-namespace Cthulhu\IosReceiptParser\Attribute;
+namespace Proton\IosReceiptParser\Attribute;
 
 /**
  * @internal

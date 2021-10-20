@@ -2,8 +2,8 @@
 
 namespace Attribute;
 
-use Cthulhu\IosReceiptParser\Attribute\AttributeSet;
-use Cthulhu\IosReceiptParser\Exception\AttributeMissingException;
+use Proton\IosReceiptParser\Attribute\AttributeSet;
+use Proton\IosReceiptParser\Exception\AttributeMissingException;
 use PHPUnit\Framework\TestCase;
 
 class AttributeSetTest extends TestCase

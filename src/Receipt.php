@@ -1,10 +1,10 @@
 <?php
 
-namespace Cthulhu\IosReceiptParser;
+namespace Proton\IosReceiptParser;
 
-use Cthulhu\IosReceiptParser\ASN1\SimpleDecoder;
-use Cthulhu\IosReceiptParser\Attribute\AttributeSet;
-use Cthulhu\IosReceiptParser\Attribute\AttributeType;
+use Proton\IosReceiptParser\ASN1\SimpleDecoder;
+use Proton\IosReceiptParser\Attribute\AttributeSet;
+use Proton\IosReceiptParser\Attribute\AttributeType;
 use phpseclib\File\ASN1;
 
 /**

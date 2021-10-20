@@ -1,12 +1,12 @@
 <?php
 
-namespace Cthulhu\IosReceiptParser\ASN1;
+namespace Proton\IosReceiptParser\ASN1;
 
 use phpseclib\File\ASN1;
 
 /**
  * @internal
- * @psalm-import-type AttributeSequence from \Cthulhu\IosReceiptParser\Attribute\AttributeSet
+ * @psalm-import-type AttributeSequence from \Proton\IosReceiptParser\Attribute\AttributeSet
  */
 final class SimpleDecoder
 {

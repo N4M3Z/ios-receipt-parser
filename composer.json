@@ -1,5 +1,5 @@
 {
-  "name": "cthulhu/ios-receipt-parser",
+  "name": "protonlabs/ios-receipt-parser",
   "description": "Utility to parse Apple-issued PKCS#7 container with receipts",
   "license": "MIT",
   "type": "library",
@@ -11,12 +11,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Cthulhu\\IosReceiptParser\\": "src/"
+      "Proton\\IosReceiptParser\\": "src/"
     }
   },
   "require": {
     "php": ">= 7.3",
-    "phpseclib/phpseclib": "^2.0"
+    "phpseclib/phpseclib": "^3.0"
   },
   "suggest": {
     "symfony/process": "To run OpenSSL in process to actually verify PKCS#7 container signatures"

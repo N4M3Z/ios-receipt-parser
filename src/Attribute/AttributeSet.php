@@ -1,8 +1,8 @@
 <?php
 
-namespace Cthulhu\IosReceiptParser\Attribute;
+namespace Proton\IosReceiptParser\Attribute;
 
-use Cthulhu\IosReceiptParser\Exception\AttributeMissingException;
+use Proton\IosReceiptParser\Exception\AttributeMissingException;
 
 /**
  * Set of attributes without assigned semantics.

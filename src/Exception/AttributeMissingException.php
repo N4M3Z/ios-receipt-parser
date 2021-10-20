@@ -1,8 +1,8 @@
 <?php
 
-namespace Cthulhu\IosReceiptParser\Exception;
+namespace Proton\IosReceiptParser\Exception;
 
-use Cthulhu\IosReceiptParser\Attribute\AttributeType;
+use Proton\IosReceiptParser\Attribute\AttributeType;
 use Throwable;
 
 final class AttributeMissingException extends \Exception

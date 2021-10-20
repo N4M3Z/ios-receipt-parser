@@ -2,7 +2,7 @@
 
 namespace ASN1;
 
-use Cthulhu\IosReceiptParser\ASN1\SimpleDecoder;
+use Proton\IosReceiptParser\ASN1\SimpleDecoder;
 use phpseclib\File\ASN1;
 use PHPUnit\Framework\TestCase;
 

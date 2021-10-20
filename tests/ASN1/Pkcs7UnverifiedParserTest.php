@@ -2,7 +2,7 @@
 
 namespace ASN1;
 
-use Cthulhu\IosReceiptParser\ASN1\Pkcs7UnverifiedParser;
+use Proton\IosReceiptParser\ASN1\Pkcs7UnverifiedParser;
 use PHPUnit\Framework\TestCase;
 
 class Pkcs7UnverifiedParserTest extends TestCase

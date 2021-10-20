@@ -1,6 +1,6 @@
 <?php
 
-namespace Cthulhu\IosReceiptParser\ASN1;
+namespace Proton\IosReceiptParser\ASN1;
 
 interface Pkcs7Reader
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Cthulhu\IosReceiptParser;
+namespace Proton\IosReceiptParser;
 
-use Cthulhu\IosReceiptParser\ASN1\Pkcs7Reader;
-use Cthulhu\IosReceiptParser\ASN1\Pkcs7UnverifiedParser;
-use Cthulhu\IosReceiptParser\ASN1\SimpleDecoder;
+use Proton\IosReceiptParser\ASN1\Pkcs7Reader;
+use Proton\IosReceiptParser\ASN1\Pkcs7UnverifiedParser;
+use Proton\IosReceiptParser\ASN1\SimpleDecoder;
 use phpseclib\File\ASN1;
 
 final class Parser

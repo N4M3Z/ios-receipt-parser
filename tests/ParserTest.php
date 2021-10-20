@@ -1,9 +1,8 @@
 <?php
 
-
-use Cthulhu\IosReceiptParser\ASN1\OpenSslProcessPkcs7Reader;
-use Cthulhu\IosReceiptParser\ASN1\Pkcs7UnverifiedParser;
-use Cthulhu\IosReceiptParser\Parser;
+use Proton\IosReceiptParser\ASN1\OpenSslProcessPkcs7Reader;
+use Proton\IosReceiptParser\ASN1\Pkcs7UnverifiedParser;
+use Proton\IosReceiptParser\Parser;
 use PHPUnit\Framework\TestCase;
 
 class ParserTest extends TestCase
