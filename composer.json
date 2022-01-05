@@ -23,8 +23,9 @@
     "symfony/process": "To run OpenSSL in process to actually verify PKCS#7 container signatures"
   },
   "require-dev": {
-    "phpunit/phpunit": "^9.3",
+    "phpunit/phpunit": "^9.5",
     "symfony/process": "^5.1",
-    "dms/phpunit-arraysubset-asserts": "^0.2.0"
+    "dms/phpunit-arraysubset-asserts": "^0.2.0",
+    "phpunit/php-code-coverage": "^9.2"
   }
 }
