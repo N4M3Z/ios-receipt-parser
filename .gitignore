@@ -1,2 +1,6 @@
 /.idea/
 /vendor/
+packages.txt
+phpunit.xml.bak
+.phpunit.result.cache
+.phpdoc/
