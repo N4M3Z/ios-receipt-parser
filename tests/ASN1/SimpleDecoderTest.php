@@ -3,7 +3,7 @@
 namespace ASN1;
 
 use Proton\IosReceiptParser\ASN1\SimpleDecoder;
-use phpseclib\File\ASN1;
+use phpseclib3\File\ASN1;
 use PHPUnit\Framework\TestCase;
 
 class SimpleDecoderTest extends TestCase
@@ -57,14 +57,14 @@ class SimpleDecoderTest extends TestCase
         foreach ($payload as $ix => $attr) {
             $this->assertSame((string) self::SRC_ATTRS[$ix]['type'], (string) $attr['type']);
             $this->assertSame((string) self::SRC_ATTRS[$ix]['version'], (string) $attr['version']);
-            $this->assertSame(self::SRC_ATTRS[$ix]['value'], $attr['value']);
+            $this->assertSame(self::SRC_ATTRS[$ix]['value'], base64_encode($attr['value']));
         }
     }
 
     public function decoderProvider(): array
     {
         return [
-            [new SimpleDecoder(new ASN1())],
+            [new SimpleDecoder()],
         ];
     }
 }

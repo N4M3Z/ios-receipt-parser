@@ -16,9 +16,15 @@ In all other cases, you should strongly prefer to validate all receipts against 
 
 ## Installation
 
+You can install this library via Composer:
+
 ```bash
 composer install protonlabs/ios-receipt-parser
 ```
+
+## Contributing
+
+All contributions are welcome. Please see [[this page](./CONTRIBUTING.md)] before you get started
 
 ## Usage
 
@@ -53,8 +59,8 @@ foreach ($receipt->getInApp() as $inApp) {
 ### Verifying signatures
 
 You can pass `Parser` another instance of PKCS#7 reader which will actually verify signature.
-Currently, only one such reader in implemented, which requires you to also install `symfony/process`, have `openssl`
-installed in your system, and also you php must be configured to allow to `exec` shell script.
+Currently, only one such reader is implemented, which requires you to also install `symfony/process`, have `openssl`
+installed in your system, and also your PHP must be configured to allow to `exec` shell script.
 
 ```php
 <?php

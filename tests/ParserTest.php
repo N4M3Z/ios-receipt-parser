@@ -34,40 +34,52 @@ b2coqRKD1od4bZm9XrMK4JjO9urDjm1p67dAgT2HPXBR0cRdjaXcf2pYGt5gdjdS
 -----END CERTIFICATE-----
 PEM;
     private const EXPECTED_DATA = [
+        'app_item_id' => 0,
         'bundle_id' => 'com.flintcast.evermatch',
         'application_version' => '57',
         'receipt_creation_date' => '2020-09-01T16:58:49+0300',
+        'receipt_creation_date_ms' => '1598968729000',
         'in_app' => [
             [
                 'quantity' => '1',
                 'product_id' => 'ru.sub.vip.week2',
                 'transaction_id' => '57',
                 'purchase_date' => '2020-09-01T16:58:42+0300',
+                'purchase_date_ms' => '1598968722000',
                 'original_transaction_id' => '56',
                 'original_purchase_date' => '2020-09-01T16:58:35+0300',
+                'original_purchase_date_ms' => '1598968715000',
                 'expires_date' => '2020-09-01T16:58:49+0300',
+                'expires_date_ms' => '1598968729000'
             ],
             [
                 'quantity' => '1',
                 'product_id' => 'ru.sub.vip.month',
                 'transaction_id' => '58',
                 'purchase_date' => '2020-09-01T16:58:49+0300',
+                'purchase_date_ms' => '1598968729000',
                 'original_transaction_id' => '56',
                 'original_purchase_date' => '2020-09-01T16:58:35+0300',
+                'original_purchase_date_ms' => '1598968715000',
                 'expires_date' => '2020-09-01T16:59:19+0300',
+                'expires_date_ms' => '1598968759000'
             ],
             [
                 'quantity' => '1',
                 'product_id' => 'ru.sub.vip.week2',
                 'transaction_id' => '56',
                 'purchase_date' => '2020-09-01T16:58:35+0300',
+                'purchase_date_ms' => '1598968715000',
                 'original_transaction_id' => '56',
                 'original_purchase_date' => '2020-09-01T16:58:35+0300',
+                'original_purchase_date_ms' => '1598968715000',
                 'expires_date' => '2020-09-01T16:58:42+0300',
+                'expires_date_ms' => '1598968722000'
             ],
         ],
         'original_application_version' => '57',
         'receipt_expiration_date' => '4001-01-01T03:00:00+0300',
+        'receipt_expiration_date_ms' => '64092211200000',      
     ];
 
     /**
