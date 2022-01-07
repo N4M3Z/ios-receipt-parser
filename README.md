@@ -86,6 +86,10 @@ The use of `parseUsingOnlyTrustedCerts` guarantees that the signature in PKCS#7 
 
 Check out the documentation for the library [here](https://protonmail.github.io/ios-receipt-parser/docs/).
 
+## Code coverage
+
+Check out the code coverage for the library [here](https://protonmail.github.io/ios-receipt-parser/coverage/).
+
 ## Contributing
 
 All contributions are welcome. Please see [this page](./CONTRIBUTING.md) before you get started.
